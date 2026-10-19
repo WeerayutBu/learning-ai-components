@@ -1,0 +1,5 @@
+data/docred/*
+!data/docred/*.example.json
+artifacts/*
+!artifacts/.gitkeep
+checkpoints/

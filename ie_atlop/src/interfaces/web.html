@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ATLOP · Relation explorer</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#213329;background:#f4f5ef;font-synthesis:none}*{box-sizing:border-box}body{margin:0}header{border-bottom:1px solid #d9dfd4;padding:14px max(20px,calc((100vw - 1440px)/2));display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:800;letter-spacing:.12em;font-size:16px}.tag{color:#627367;font-size:13px}main{max-width:1480px;margin:0 auto;padding:24px 20px}h1{font-size:clamp(28px,3vw,36px);letter-spacing:-.04em;margin:8px 0 12px;line-height:1.12}h2{font-size:19px;margin:0}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:700;color:#557062}.intro{margin:0 0 32px;max-width:680px;color:#627367;line-height:1.65}.layout{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:18px;align-items:start}.card{background:#fff;border:1px solid #dce2d7;border-radius:16px;overflow:hidden}.card-head{padding:14px 18px;border-bottom:1px solid #e8ece4;display:flex;align-items:center;justify-content:space-between;gap:12px}.step{color:#738477;font:12px ui-monospace,monospace}form{padding:16px 18px}label{display:block;font-size:14px;font-weight:650;margin-bottom:9px}.hint{color:#6b776d;font-size:12px;margin:8px 0 22px;line-height:1.5}textarea{display:block;resize:vertical;width:100%;padding:14px;border:1px solid #cfd8ca;border-radius:9px;background:#fafbf8;color:#213329;line-height:1.65;font:inherit;font-size:14px;line-height:1.65;min-height:100px}#text{min-height:190px}textarea:focus{outline:3px solid #cfe1d0;border-color:#4b795b}button{font:inherit;cursor:pointer;border-radius:8px;padding:11px 16px;border:1px solid #ced9cc;background:white;color:#324e3c}button:focus-visible{outline:3px solid #82af8c;outline-offset:3px}.primary{background:#28553d;border-color:#28553d;color:white;font-weight:650;width:100%;display:flex;justify-content:space-between}.primary:hover{background:#1b432e}.primary:disabled{opacity:.6;cursor:wait}.link{padding:4px 0;border:0;background:none;font-size:12px;color:#477255;text-decoration:underline;text-underline-offset:3px}.result-body{padding:16px 18px;min-height:0}.empty{display:flex;min-height:96px;align-items:center;justify-content:center;text-align:center;color:#6b776d}.empty p{max-width:260px;font-size:14px;line-height:1.7}.empty-symbol{font-size:32px;color:#799b80;margin-bottom:14px}.relation{border:1px solid #e0e7db;background:#fafbf8;border-radius:10px;padding:16px;margin-bottom:12px}.endpoints{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:16px;font-weight:650;overflow-wrap:anywhere}.arrow{color:#80a086;font-weight:400}.relation-label{font-size:12px;color:#627367;margin-top:9px;line-height:1.6}.relation-label code{margin-left:8px;color:#819084}.summary{font-size:12px;color:#6b776d;margin:0 0 10px}#error{color:#963c30;background:#fff1ec;border-radius:8px;padding:12px;margin:16px 0 0;font-size:13px;line-height:1.5}#error:empty{display:none}footer{font-size:12px;color:#748174;line-height:1.7;margin-top:24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}#download{display:none}.pill{font-size:11px;color:#28553d;border:1px solid #c9d9c8;background:#edf4e9;border-radius:30px;padding:6px 10px;white-space:nowrap}@media(max-width:760px){main{padding:20px 14px}.layout{grid-template-columns:1fr}header{padding:14px 18px}.tag{display:none}.result-body{min-height:0}.empty{min-height:80px}.card-head,form,.result-body{padding:14px}.card-head{flex-wrap:wrap}}
+select,input{font:inherit;max-width:100%;padding:9px;border:1px solid #cfd8ca;border-radius:8px}#annotation-controls{border:0;padding:0;margin:0 0 12px;min-width:0}#annotation-controls button{margin:8px 8px 0 0}#annotations{overflow-x:auto;margin-top:10px}table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;padding:8px;border-bottom:1px solid #dce2d7;overflow-wrap:anywhere}caption{text-align:left;font-weight:650;margin-bottom:8px}[hidden]{display:none!important}
+#document-surface{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;padding:12px;border:1px solid #cfd8ca;border-radius:9px;background:#fafbf8;min-height:0;user-select:text}#document-surface mark{background:var(--entity-color);border-bottom:2px solid #557062;border-radius:3px;padding:2px 0;color:inherit}#document-surface:focus{outline:3px solid #cfe1d0}.entity-key{display:inline-block;padding:2px 6px;border-radius:4px;margin:4px;font-size:12px}#edit-document{margin:4px 0}
+.type-hint{display:block;font-size:11px;color:#627367;margin-top:4px}
+.graph-scroll{overflow:auto;border:1px solid #dce2d7;border-radius:12px;margin-bottom:16px}.relation-graph{display:block;width:100%;min-width:650px;background:#fafbf8}.graph-node{cursor:grab;touch-action:none}.graph-node:active{cursor:grabbing}.graph-node text{font-size:13px;fill:#213329;pointer-events:none}.edge-label{font-size:11px;fill:#365642;paint-order:stroke;stroke:#fafbf8;stroke-width:4px;stroke-linejoin:round;pointer-events:none}details summary{cursor:pointer;font-size:13px;color:#477255;margin:12px 0}
+#selection-status{margin:6px 0}#selection-status:empty,#annotations:empty,#entity-legend:empty{display:none}.empty p{margin:8px 0}.empty-symbol{display:none}
+#run{width:auto;gap:10px;padding:9px 12px;font-size:13px;white-space:nowrap}.header-actions{display:flex;align-items:center;gap:14px}.card-head{flex-wrap:wrap}
+</style>
+</head>
+<body>
+<main>
+
+<div class="layout">
+<section class="card" aria-labelledby="input-title">
+<div class="card-head"><h2 id="input-title">Your document</h2><select id="sample" aria-label="Sample document"><option value="acme">Company offices</option><option value="microsoft">Technology company</option><option value="capital">Museum and artwork</option></select><div class="header-actions"><button class="link" type="button" id="example">Load</button><button class="primary" id="run" type="submit" form="form"><span>Find relations</span><span aria-hidden="true">↗</span></button></div></div>
+<form id="form">
+<label id="document-label">Document text</label>
+<div id="document-surface" tabindex="0" role="region" aria-labelledby="document-label"></div>
+<div id="entity-legend" aria-label="Entity colors"></div>
+<button id="edit-document" class="link" type="button">Edit document</button>
+<textarea hidden aria-label="Edit document text" id="text" name="text" maxlength="12000" spellcheck="false" required>Acme is a manufacturing company.
+Its headquarters are in Paris, the capital of France.
+The company operates another office in Berlin.
+That city is the capital of Germany.
+Both countries are in Europe.</textarea>
+
+<fieldset id="annotation-controls">
+
+<p id="selection-status" class="summary" aria-live="polite">Select a mention in the document.</p>
+
+
+<button id="add-mention" type="button">Add mention</button>
+
+<div id="annotations" aria-live="polite"></div>
+
+</fieldset>
+<p id="error" role="alert"></p>
+</form>
+</section>
+<section class="card" aria-labelledby="results-title" aria-busy="false" id="results-panel">
+<div class="card-head"><h2 id="results-title">Predicted relations</h2><button class="link" id="download" type="button">Download JSON</button></div>
+<div class="result-body" id="results" aria-live="polite"><div class="empty"><div><div class="empty-symbol" aria-hidden="true">○ ─ ○</div><p>Your results will appear here.<br>Try the example to get started.</p></div></div></div>
+</section>
+</div>
+
+</main>
+<script>
+const form=document.querySelector('#form'), text=document.querySelector('#text'), results=document.querySelector('#results'), run=document.querySelector('#run'), error=document.querySelector('#error'), panel=document.querySelector('#results-panel'), download=document.querySelector('#download');
+let output=null;
+// Broad, typical relation roles; these are not entity classifications from ATLOP.
+const relationTypes={
+ P159:['Organization','Place'],P17:['Entity','Country'],
+ P131:['Entity','Administrative area'],P36:['Territory','City'],P1376:['City','Territory'],
+ P19:['Person','Place'],P20:['Person','Place'],P27:['Person','Country'],
+ P22:['Person','Person'],P25:['Person','Person'],P26:['Person','Person'],
+ P40:['Person','Person'],P3373:['Person','Person'],
+ P69:['Person','Educational institution'],P108:['Person','Employer'],
+ P112:['Organization','Person / organization'],P749:['Organization','Organization'],
+ P355:['Organization','Organization'],P30:['Place','Continent'],
+ P276:['Entity','Place'],P569:['Person','Date'],P570:['Person','Date']
+};
+const annotations=document.querySelector('#annotations'), controls=document.querySelector('#annotation-controls'), selectionStatus=document.querySelector('#selection-status');
+let groups=[], selection=null;
+const surface=document.querySelector('#document-surface'),legend=document.querySelector('#entity-legend'),editDocument=document.querySelector('#edit-document');
+const colors=['#d4edda','#dbeafe','#fde3b5','#eadcf8','#ffdce5','#cbefef'];
+function renderDocument(){
+ surface.replaceChildren();legend.replaceChildren();
+ const characters=Array.from(text.value),boundaries=new Set([0,characters.length]);
+ groups.forEach((entity,index)=>{
+  const key=document.createElement('span');key.className='entity-key';key.style.background=colors[index%colors.length];key.textContent=entity.name;legend.append(key);
+  entity.mentions.forEach(mention=>{boundaries.add(mention.start);boundaries.add(mention.end);});
+ });
+ const edges=[...boundaries].sort((a,b)=>a-b);
+ for(let i=0;i<edges.length-1;i++){
+  const start=edges[i],end=edges[i+1],owners=groups.filter(entity=>entity.mentions.some(m=>m.start<=start&&m.end>=end));
+  const segment=characters.slice(start,end).join('');
+  if(!owners.length){surface.append(document.createTextNode(segment));continue;}
+  const mark=document.createElement('mark');mark.textContent=segment;mark.title=owners.map(entity=>entity.name).join(', ');mark.style.setProperty('--entity-color',colors[groups.indexOf(owners[0])%colors.length]);surface.append(mark);
+ }
+}
+editDocument.onclick=()=>{
+ const editing=text.hidden;text.hidden=!editing;surface.hidden=editing;legend.hidden=editing;
+ editDocument.textContent=editing?'Done editing':'Edit document';
+ if(editing)text.focus();else{renderDocument();surface.focus();}
+};
+renderDocument();
+function renderAnnotations(){
+ renderDocument();
+annotations.replaceChildren();
+ if(groups.length){
+  const table=document.createElement('table');const caption=document.createElement('caption');caption.textContent='Selected mentions';table.append(caption);
+  const header=table.createTHead().insertRow();for(const label of ['Entity','Mention','Start','End','']){const cell=document.createElement('th');cell.scope='col';cell.textContent=label;header.append(cell);}
+  const body=table.createTBody();
+  groups.forEach((entity,index)=>{
+   entity.mentions.forEach((mention,mentionIndex)=>{
+    const row=body.insertRow();for(const value of [entity.name,Array.from(text.value).slice(mention.start,mention.end).join(''),mention.start,mention.end])row.insertCell().textContent=String(value);
+    const remove=document.createElement('button');remove.type='button';remove.className='link';remove.textContent='Remove';remove.setAttribute('aria-label','Remove mention from '+entity.name);
+    remove.onclick=()=>{entity.mentions.splice(mentionIndex,1);if(!entity.mentions.length)groups.splice(index,1);reset();renderAnnotations();};row.insertCell().append(remove);
+   });
+  });annotations.append(table);
+ }
+}
+function captureSelection(){
+ if(run.disabled||!text.hidden)return;
+ const selected=window.getSelection();
+ if(!selected.rangeCount||selected.isCollapsed)return;
+ const range=selected.getRangeAt(0);
+ if(!surface.contains(range.startContainer)||!surface.contains(range.endContainer))return;
+ const prefix=range.cloneRange();prefix.selectNodeContents(surface);prefix.setEnd(range.startContainer,range.startOffset);
+ let start=prefix.toString().length,end=start+range.toString().length;
+ while(start<end && /\s/u.test(text.value[start]))start++;
+ while(end>start && /\s/u.test(text.value[end-1]))end--;
+ selection=start<end?{start:Array.from(text.value.slice(0,start)).length,end:Array.from(text.value.slice(0,end)).length}:null;
+ selectionStatus.textContent=selection?'Selected: “'+text.value.slice(start,end)+'”':'Select a mention in the document.';
+}
+document.addEventListener('selectionchange',captureSelection);
+surface.addEventListener('mouseup',captureSelection);surface.addEventListener('keyup',captureSelection);
+document.querySelector('#add-mention').onclick=()=>{
+ if(!selection){error.textContent='Select a mention in Document text first.';return;}
+ if(groups.some(entity=>entity.mentions.some(mention=>mention.start===selection.start&&mention.end===selection.end))){error.textContent='This span is already selected.';return;}
+  const base=Array.from(text.value).slice(selection.start,selection.end).join('');
+  let name=base,suffix=2;while(groups.some(entity=>entity.name===name))name=base+' ('+(suffix++)+')';
+  if(groups.length>=30){error.textContent='Maximum 30 entities.';return;}
+  groups.push({name,mentions:[{...selection}]});renderAnnotations();
+ reset();window.getSelection().removeAllRanges();selection=null;selectionStatus.textContent='Mention added. Select another mention in the document.';
+};
+function reset(){output=null;download.style.display='none';error.textContent='';results.replaceChildren();const empty=document.createElement('div');empty.className='empty';const message=document.createElement('p');message.textContent='Inputs changed. Run inference to see updated relations.';empty.append(message);results.append(empty);}
+text.addEventListener('input',()=>{groups=[];selection=null;renderAnnotations();selectionStatus.textContent='Document changed. Select mentions again.';reset();});
+const samples={
+ "acme": {
+  "text": "Acme is a manufacturing company.\nIts headquarters are in Paris, the capital of France.\nThe company operates another office in Berlin.\nThat city is the capital of Germany.\nBoth countries are in Europe.",
+  "mentions": [
+   "Acme",
+   "Paris",
+   "France",
+   "Berlin",
+   "Germany",
+   "Europe"
+  ]
+ },
+ "microsoft": {
+  "text": "Microsoft is a technology company founded by Bill Gates and Paul Allen.\nIts headquarters are in Redmond.\nThat city is in Washington, a state in the United States.\nThe company develops Windows and owns LinkedIn.\nThe professional networking service has its headquarters in Sunnyvale.",
+  "mentions": [
+   "Microsoft",
+   "Bill Gates",
+   "Paul Allen",
+   "Redmond",
+   "Washington",
+   "United States",
+   "Windows",
+   "LinkedIn",
+   "Sunnyvale"
+  ]
+ },
+ "capital": {
+  "text": "Paris is the capital of France.\nThe city is home to the Louvre.\nThat museum houses the Mona Lisa, painted by Leonardo da Vinci.\nThe museum is located in France.\nThe country is in Europe.",
+  "mentions": [
+   "Paris",
+   "France",
+   "Louvre",
+   "Mona Lisa",
+   "Leonardo da Vinci",
+   "Europe"
+  ]
+ }
+};
+document.querySelector('#example').onclick=()=>{
+ const sample=samples[document.querySelector('#sample').value];text.value=sample.text;
+ groups=sample.mentions.map(name=>{
+  const start=Array.from(sample.text.slice(0,sample.text.indexOf(name))).length;
+  return {name,mentions:[{start,end:start+Array.from(name).length}]};
+ });
+ selection=null;window.getSelection().removeAllRanges();text.hidden=true;surface.hidden=false;legend.hidden=false;editDocument.textContent='Edit document';
+ renderAnnotations();selectionStatus.textContent='';reset();
+};
+function renderGraph(data){
+ const ns='http://www.w3.org/2000/svg';
+ function element(tag,attributes={},textContent){const node=document.createElementNS(ns,tag);for(const [key,value] of Object.entries(attributes))node.setAttribute(key,value);if(textContent!==undefined)node.textContent=textContent;return node;}
+ const wrapper=document.createElement('div');wrapper.className='graph-scroll';
+ const svg=element('svg',{viewBox:'0 0 900 700',role:'img','aria-label':'Predicted relations graph. Arrows point from source to target. Drag nodes to rearrange.',class:'relation-graph'});
+ const title=element('title',{},'Predicted relations — drag entities to rearrange');svg.append(title);
+ const defs=element('defs');const marker=element('marker',{id:'relation-arrow',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:7,markerHeight:7,orient:'auto-start-reverse'});marker.append(element('path',{d:'M 0 0 L 10 5 L 0 10 z',fill:'#638270'}));defs.append(marker);svg.append(defs);
+ const names=(data.annotations||groups).map(entity=>entity.name);
+ for(const relation of data.relations)for(const name of [relation.head,relation.tail])if(!names.includes(name))names.push(name);
+ const positions=new Map(names.map((name,index)=>{const angle=2*Math.PI*index/names.length-Math.PI/2;return [name,{x:450+300*Math.cos(angle),y:350+255*Math.sin(angle)}];}));
+ const pairs=new Map();for(const relation of data.relations){const key=JSON.stringify([relation.head,relation.tail]);if(!pairs.has(key))pairs.set(key,{head:relation.head,tail:relation.tail,labels:[]});pairs.get(key).labels.push(relation.relation_id==='P131'?'located in':relation.relation);}
+ const edges=[];
+ for(const pair of pairs.values()){
+  const path=element('path',{fill:'none',stroke:'#638270','stroke-width':1.6,'marker-end':'url(#relation-arrow)'});
+  const label=element('text',{'text-anchor':'middle',class:'edge-label'});
+  pair.labels.forEach((text,index)=>label.append(element('tspan',{x:0,dy:index?15:0},text)));
+  svg.append(path,label);edges.push({...pair,path,label});
+ }
+ const nodes=[];
+ names.forEach((name,index)=>{
+  const group=element('g',{class:'graph-node','aria-label':name});
+  group.append(element('rect',{x:-72,y:-21,width:144,height:42,rx:12,fill:colors[index%colors.length],stroke:'#8ba491'}));
+  const label=element('text',{'text-anchor':'middle','dominant-baseline':'middle'},name.length>23?name.slice(0,21)+'…':name);group.append(label,element('title',{},name));svg.append(group);nodes.push({name,group});
+  group.onpointerdown=event=>{event.preventDefault();group.setPointerCapture(event.pointerId);};
+  group.onpointermove=event=>{if(!group.hasPointerCapture(event.pointerId))return;const point=new DOMPoint(event.clientX,event.clientY).matrixTransform(svg.getScreenCTM().inverse());positions.set(name,{x:Math.max(80,Math.min(820,point.x)),y:Math.max(30,Math.min(670,point.y))});draw();};
+  group.onpointerup=event=>{if(group.hasPointerCapture(event.pointerId))group.releasePointerCapture(event.pointerId);};
+ });
+ function draw(){
+  for(const {name,group} of nodes){const p=positions.get(name);group.setAttribute('transform',`translate(${p.x} ${p.y})`);}
+  for(const edge of edges){
+   const a=positions.get(edge.head),b=positions.get(edge.tail),dx=b.x-a.x,dy=b.y-a.y,length=Math.hypot(dx,dy)||1;
+   const reverse=pairs.has(JSON.stringify([edge.tail,edge.head]));const bend=reverse?65:20;
+   const cx=(a.x+b.x)/2-dy/length*bend,cy=(a.y+b.y)/2+dx/length*bend;
+   function boundary(p){const vx=cx-p.x,vy=cy-p.y,scale=1/Math.max(Math.abs(vx)/77,Math.abs(vy)/26,0.001);return {x:p.x+vx*scale,y:p.y+vy*scale};}
+   const start=boundary(a),end=boundary(b);
+   edge.path.setAttribute('d',`M ${start.x} ${start.y} Q ${cx} ${cy} ${end.x} ${end.y}`);
+   const x=(start.x+2*cx+end.x)/4,y=(start.y+2*cy+end.y)/4-(edge.labels.length-1)*7.5-5;
+   edge.label.setAttribute('transform',`translate(${x} ${y})`);
+  }
+ }
+ draw();wrapper.append(svg);return wrapper;
+}
+
+form.onsubmit=async event=>{
+ event.preventDefault();reset();if(groups.length<2){error.textContent='Select at least two mentions.';return;}controls.disabled=true;editDocument.disabled=true;run.disabled=true;text.disabled=true;document.querySelector('#example').disabled=true;document.querySelector('#sample').disabled=true;panel.setAttribute('aria-busy','true');run.firstElementChild.textContent='Reading your document…';results.textContent='Running the model…';
+ try{
+  const response=await fetch('/api/infer',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:text.value,entities:groups})});
+  const data=await response.json();if(!response.ok)throw new Error(data.error||'Inference failed.');output=data;
+  results.replaceChildren();const summary=document.createElement('p');summary.className='summary';summary.textContent=`${data.relations.length} relations`;results.append(summary);
+  if(!data.relations.length){summary.textContent='No relations found.';}
+  else{
+   const table=document.createElement('table');const caption=document.createElement('caption');caption.className='summary';caption.textContent='Typical types from relation labels · not model predictions';table.append(caption);const header=table.createTHead().insertRow();
+   for(const title of ['From','Relation','To']){const cell=document.createElement('th');cell.scope='col';cell.textContent=title;header.append(cell);}
+   const body=table.createTBody();
+   for(const relation of data.relations){
+    const row=body.insertRow();
+    const label=relation.relation_id==='P131'?'located in':relation.relation;
+    const types=relationTypes[relation.relation_id]||['Unspecified','Unspecified'];
+    const head=row.insertCell();head.textContent=relation.head;
+    const headType=document.createElement('small');headType.className='type-hint';headType.textContent=types[0];head.append(headType);
+    row.insertCell().textContent=label;
+    const tail=row.insertCell();tail.textContent=relation.tail;
+    const tailType=document.createElement('small');tailType.className='type-hint';tailType.textContent=types[1];tail.append(tailType);
+   }
+   results.append(renderGraph(data));
+   const details=document.createElement('details');const toggle=document.createElement('summary');toggle.textContent='Relation details';details.append(toggle,table);results.append(details);
+  }
+  download.style.display='inline';
+ }catch(problem){error.textContent=problem.message;results.textContent='No results. Check the message below the input and try again.';}
+ finally{controls.disabled=false;editDocument.disabled=false;run.disabled=false;text.disabled=false;document.querySelector('#example').disabled=false;document.querySelector('#sample').disabled=false;panel.setAttribute('aria-busy','false');run.firstElementChild.textContent='Find relations';}
+};
+download.onclick=()=>{if(!output)return;const url=URL.createObjectURL(new Blob([JSON.stringify(output,null,2)],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='atlop-relations.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+</script>
+</body>
+</html>

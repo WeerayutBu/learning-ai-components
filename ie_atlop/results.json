@@ -1,0 +1,21 @@
+{
+  "split": "dev",
+  "seed": 66,
+  "training_completed": true,
+  "evaluations": 30,
+  "best_epoch": 30,
+  "selection": "maximum dev_F1; Ign F1 from the same evaluation",
+  "measured": {
+    "dev_F1": 60.753899480069315,
+    "dev_F1_ign": 58.86129105540282
+  },
+  "paper_five_seed_mean": {
+    "dev_F1": 61.09,
+    "dev_F1_ign": 59.22
+  },
+  "difference_percentage_points": {
+    "dev_F1": -0.3361005199306888,
+    "dev_F1_ign": -0.3587089445971756
+  },
+  "test": "unscored; requires official evaluation of artifacts/result.json"
+}

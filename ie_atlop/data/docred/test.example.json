@@ -1,0 +1,339 @@
+[
+  {
+    "vertexSet": [
+      [
+        {
+          "name": "Canton Memorial Civic Center",
+          "pos": [
+            1,
+            5
+          ],
+          "sent_id": 0,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "City of Canton",
+          "pos": [
+            6,
+            9
+          ],
+          "sent_id": 2,
+          "type": "LOC"
+        },
+        {
+          "name": "Canton",
+          "pos": [
+            13,
+            14
+          ],
+          "sent_id": 0,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "Ohio",
+          "pos": [
+            15,
+            16
+          ],
+          "sent_id": 0,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "United States",
+          "pos": [
+            17,
+            19
+          ],
+          "sent_id": 0,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "Canton Charge",
+          "pos": [
+            28,
+            30
+          ],
+          "sent_id": 0,
+          "type": "ORG"
+        }
+      ],
+      [
+        {
+          "pos": [
+            32,
+            35
+          ],
+          "type": "ORG",
+          "sent_id": 0,
+          "name": "NBA G League"
+        }
+      ],
+      [
+        {
+          "pos": [
+            2,
+            3
+          ],
+          "type": "TIME",
+          "sent_id": 1,
+          "name": "1951"
+        }
+      ],
+      [
+        {
+          "sent_id": 1,
+          "type": "ORG",
+          "pos": [
+            15,
+            17
+          ],
+          "name": "Canton Legends"
+        }
+      ],
+      [
+        {
+          "sent_id": 1,
+          "type": "ORG",
+          "pos": [
+            21,
+            23
+          ],
+          "name": "Canton Invaders"
+        }
+      ],
+      [
+        {
+          "pos": [
+            28,
+            30
+          ],
+          "type": "ORG",
+          "sent_id": 1,
+          "name": "Ohio Aviators"
+        }
+      ],
+      [
+        {
+          "pos": [
+            32,
+            35
+          ],
+          "type": "ORG",
+          "sent_id": 1,
+          "name": "American Basketball Association"
+        }
+      ],
+      [
+        {
+          "name": "SMG",
+          "pos": [
+            12,
+            13
+          ],
+          "sent_id": 2,
+          "type": "ORG"
+        }
+      ],
+      [
+        {
+          "pos": [
+            2,
+            3
+          ],
+          "type": "NUM",
+          "sent_id": 3,
+          "name": "5,200"
+        }
+      ],
+      [
+        {
+          "pos": [
+            10,
+            11
+          ],
+          "type": "NUM",
+          "sent_id": 3,
+          "name": "600"
+        }
+      ],
+      [
+        {
+          "pos": [
+            13,
+            15
+          ],
+          "type": "LOC",
+          "sent_id": 3,
+          "name": "McKinley Room"
+        }
+      ],
+      [
+        {
+          "name": "Pro Football Hall of Fame",
+          "pos": [
+            25,
+            30
+          ],
+          "sent_id": 4,
+          "type": "MISC"
+        }
+      ]
+    ],
+    "title": "Canton Memorial Civic Center",
+    "sents": [
+      [
+        "The",
+        "Canton",
+        "Memorial",
+        "Civic",
+        "Center",
+        "is",
+        "a",
+        "multi",
+        "-",
+        "purpose",
+        "arena",
+        "located",
+        "in",
+        "Canton",
+        ",",
+        "Ohio",
+        ",",
+        "United",
+        "States",
+        ",",
+        "and",
+        "is",
+        "currently",
+        "the",
+        "home",
+        "arena",
+        "for",
+        "the",
+        "Canton",
+        "Charge",
+        "of",
+        "the",
+        "NBA",
+        "G",
+        "League",
+        "."
+      ],
+      [
+        "Built",
+        "in",
+        "1951",
+        ",",
+        "previous",
+        "sports",
+        "teams",
+        "that",
+        "have",
+        "played",
+        "at",
+        "the",
+        "center",
+        "include",
+        "the",
+        "Canton",
+        "Legends",
+        "indoor",
+        "football",
+        "team",
+        ",",
+        "Canton",
+        "Invaders",
+        "indoor",
+        "soccer",
+        "team",
+        ",",
+        "and",
+        "Ohio",
+        "Aviators",
+        "of",
+        "the",
+        "American",
+        "Basketball",
+        "Association",
+        "."
+      ],
+      [
+        "The",
+        "building",
+        "is",
+        "owned",
+        "by",
+        "the",
+        "City",
+        "of",
+        "Canton",
+        "and",
+        "operated",
+        "by",
+        "SMG",
+        "."
+      ],
+      [
+        "Capacity",
+        "is",
+        "5,200",
+        "in",
+        "the",
+        "arena",
+        ",",
+        "and",
+        "up",
+        "to",
+        "600",
+        "in",
+        "the",
+        "McKinley",
+        "Room",
+        "."
+      ],
+      [
+        "The",
+        "facility",
+        "has",
+        "over",
+        "the",
+        "years",
+        "hosted",
+        "concerts",
+        ",",
+        "professional",
+        "wrestling",
+        "cards",
+        ",",
+        "political",
+        "rallies",
+        ",",
+        "family",
+        "shows",
+        ",",
+        "and",
+        "features",
+        "a",
+        "number",
+        "of",
+        "annual",
+        "Pro",
+        "Football",
+        "Hall",
+        "of",
+        "Fame",
+        "festival",
+        "events",
+        "."
+      ]
+    ]
+  }
+]

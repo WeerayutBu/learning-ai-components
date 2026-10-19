@@ -85,6 +85,10 @@ flowchart LR
     classDef arch fill:#e8f5e9,stroke:#2e7d32,color:#0d1b2a
     classDef infer fill:#fce4ec,stroke:#c2185b,color:#0d1b2a
     classDef post fill:#ede7f6,stroke:#4527a0,color:#0d1b2a
+    subgraph IE["ie · information extraction"]
+        M26[26 · ATLOP baseline]:::ie
+    end
+    classDef ie fill:#eeeeee,stroke:#616161,color:#0d1b2a
     classDef other fill:#eeeeee,stroke:#616161,color:#0d1b2a
     classDef agent fill:#e0f2f1,stroke:#00695c,color:#0d1b2a
     style TOKENIZE fill:#fafafa,stroke:#bbb,color:#333
@@ -98,9 +102,9 @@ flowchart LR
 
 ## Index
 
-23 core mechanisms and 2 other experiments, grouped by category in the [graph](#dependency-graph)'s order. The **#** is the learning order — follow it, or take a category at a time. Structured output (#24) can be studied immediately after sampling (#10).
+23 core mechanisms, 1 information extraction baseline, and 2 other experiments, grouped by category in the [graph](#dependency-graph)'s order. The **#** is the learning order — follow it, or take a category at a time. Structured output (#24) can be studied immediately after sampling (#10).
 
-Dirs are `<cat>_<mechanism>` — `tok` · `fnd` · `trn` · `arc` · `inf` · `pst` · `agt` · `other`. Both
+Dirs are `<cat>_<mechanism>` — `tok` · `fnd` · `trn` · `arc` · `inf` · `pst` · `agt` · `ie` · `other`. Both
 halves are stable, so **this table owns the order**: adding or dropping a mechanism is a
 one-row edit and never renames a directory.
 
@@ -131,6 +135,7 @@ one-row edit and never renames a directory.
 | 21 | [meta-evolution](agt_meta_evolution/) | agent | 🟡 | EvoX ([arXiv:2602.23413](https://arxiv.org/abs/2602.23413)) · [skydiscover](https://github.com/skydiscover-ai/skydiscover) | The search strategy is code — a second loop rewrites it when `Δ < τ` says the first one stalled |
 | 23 | [DiZiNER: disagreement-guided NER](other_diziner/) | other | 🟡 | [ACL 2026 paper](https://aclanthology.org/2026.acl-long.795/) · Thai/English adaptation, strict span F1 | Independent annotators disagree; a supervisor refines their instructions without gold labels or weight updates |
 | 25 | [entity linking](other_entity_linking/) | other | 🟡 | ReFinED at `7f57bd2` · pretrained CPU inference | Context, types, descriptions, and priors resolve an ambiguous mention to an entity |
+| 26 | [ATLOP baseline](ie_atlop/) | ie | 🟡 | Official ATLOP `1db77ab8`; dev F1 60.75 / Ign F1 58.86 | Each entity pair learns a threshold and pools context attended to by both entities |
 
 Status legend: 🔲 planned · 🟡 in progress · ✅ done (matches the reference). Agent modules score by EM/F1 or exact value, not allclose.
 

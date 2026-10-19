@@ -1,0 +1,28 @@
+[project]
+name = "ie-atlop"
+version = "0.1.0"
+requires-python = ">=3.8,<3.9"
+dependencies = [
+    "torch==1.13.1",
+    "transformers==3.4.0",
+    "numpy==1.19.4",
+    "opt-einsum==3.3.0",
+    "protobuf<4",
+    "ujson==4.3.0",
+    "tqdm==4.66.5",
+    "ipykernel<7",
+    "nbformat<6",
+    "nbclient<0.9",
+    "python-dotenv<1.1",
+    "setuptools<70",
+    "pip",
+    "wheel",
+    "apex",
+    "packaging<25",
+]
+
+[tool.uv]
+no-build-isolation-package = ["apex"]
+
+[tool.uv.sources]
+apex = { url = "https://github.com/NVIDIA/apex/archive/b88c507edb0d067d5570f7a8efe03a90664a3d16.tar.gz" }

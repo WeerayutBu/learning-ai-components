@@ -1,0 +1,284 @@
+[
+  {
+    "vertexSet": [
+      [
+        {
+          "name": "Western Australia",
+          "pos": [
+            11,
+            13
+          ],
+          "sent_id": 2,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "Rottnest Island",
+          "pos": [
+            15,
+            17
+          ],
+          "sent_id": 2,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "Perth",
+          "pos": [
+            20,
+            21
+          ],
+          "sent_id": 2,
+          "type": "LOC"
+        },
+        {
+          "name": "Perth",
+          "pos": [
+            40,
+            41
+          ],
+          "sent_id": 2,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "Bald Island",
+          "pos": [
+            24,
+            26
+          ],
+          "sent_id": 2,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "Albany",
+          "pos": [
+            27,
+            28
+          ],
+          "sent_id": 2,
+          "type": "LOC"
+        },
+        {
+          "name": "Albany",
+          "pos": [
+            42,
+            43
+          ],
+          "sent_id": 2,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "Peoples Bay Nature Reserve",
+          "pos": [
+            17,
+            21
+          ],
+          "sent_id": 3,
+          "type": "LOC"
+        }
+      ],
+      [
+        {
+          "name": "Gilbert",
+          "pos": [
+            31,
+            32
+          ],
+          "sent_id": 3,
+          "type": "LOC"
+        }
+      ]
+    ],
+    "labels": [
+      {
+        "r": "P131",
+        "h": 1,
+        "t": 0,
+        "evidence": [
+          2
+        ]
+      },
+      {
+        "r": "P131",
+        "h": 2,
+        "t": 0,
+        "evidence": [
+          2
+        ]
+      },
+      {
+        "r": "P131",
+        "h": 3,
+        "t": 0,
+        "evidence": [
+          2
+        ]
+      },
+      {
+        "r": "P131",
+        "h": 4,
+        "t": 0,
+        "evidence": [
+          2
+        ]
+      },
+      {
+        "r": "P150",
+        "h": 0,
+        "t": 4,
+        "evidence": [
+          2
+        ]
+      }
+    ],
+    "title": "Quokka",
+    "sents": [
+      [
+        "The",
+        "quokka",
+        "(",
+        ",",
+        "Setonix",
+        "brachyurus",
+        ")",
+        ",",
+        "the",
+        "only",
+        "member",
+        "of",
+        "the",
+        "genus",
+        "Setonix",
+        ",",
+        "is",
+        "a",
+        "small",
+        "macropod",
+        "about",
+        "the",
+        "size",
+        "of",
+        "a",
+        "domestic",
+        "cat",
+        "."
+      ],
+      [
+        "Like",
+        "other",
+        "marsupials",
+        "in",
+        "the",
+        "macropod",
+        "family",
+        "(",
+        "such",
+        "as",
+        "kangaroos",
+        "and",
+        "wallabies",
+        ")",
+        ",",
+        "the",
+        "quokka",
+        "is",
+        "herbivorous",
+        "and",
+        "mainly",
+        "nocturnal",
+        "."
+      ],
+      [
+        "Quokkas",
+        "are",
+        "found",
+        "on",
+        "some",
+        "smaller",
+        "islands",
+        "off",
+        "the",
+        "coast",
+        "of",
+        "Western",
+        "Australia",
+        ",",
+        "particularly",
+        "Rottnest",
+        "Island",
+        ",",
+        "just",
+        "off",
+        "Perth",
+        ",",
+        "and",
+        "also",
+        "Bald",
+        "Island",
+        "near",
+        "Albany",
+        ",",
+        "and",
+        "in",
+        "isolated",
+        "scattered",
+        "populations",
+        "in",
+        "forest",
+        "and",
+        "coastal",
+        "heath",
+        "between",
+        "Perth",
+        "and",
+        "Albany",
+        "."
+      ],
+      [
+        "A",
+        "small",
+        "colony",
+        "exists",
+        "at",
+        "the",
+        "eastern",
+        "limit",
+        "of",
+        "their",
+        "range",
+        "in",
+        "a",
+        "protected",
+        "area",
+        "of",
+        "Two",
+        "Peoples",
+        "Bay",
+        "Nature",
+        "Reserve",
+        ",",
+        "where",
+        "they",
+        "co",
+        "-",
+        "exist",
+        "with",
+        "the",
+        "critically",
+        "endangered",
+        "Gilbert",
+        "'s",
+        "potoroo",
+        "."
+      ]
+    ]
+  }
+]
