@@ -135,7 +135,7 @@ one-row edit and never renames a directory.
 | 21 | [meta-evolution](agt_meta_evolution/) | agent | 🟡 | EvoX ([arXiv:2602.23413](https://arxiv.org/abs/2602.23413)) · [skydiscover](https://github.com/skydiscover-ai/skydiscover) | The search strategy is code — a second loop rewrites it when `Δ < τ` says the first one stalled |
 | 23 | [DiZiNER: disagreement-guided NER](other_diziner/) | other | 🟡 | [ACL 2026 paper](https://aclanthology.org/2026.acl-long.795/) · Thai/English adaptation, strict span F1 | Independent annotators disagree; a supervisor refines their instructions without gold labels or weight updates |
 | 25 | [entity linking](other_entity_linking/) | other | 🟡 | ReFinED at `7f57bd2` · pretrained CPU inference | Context, types, descriptions, and priors resolve an ambiguous mention to an entity |
-| 26 | [ATLOP baseline](ie_atlop/) | ie | 🟡 | Official ATLOP `1db77ab8`; dev F1 60.75 / Ign F1 58.86 | Each entity pair learns a threshold and pools context attended to by both entities |
+| 26 | [ATLOP baseline](ie_atlop/) | ie | 🟡 | Official ATLOP `1db77ab8`; dev F1 60.80 / Ign F1 58.97 (seed 66, epoch 29) | Each entity pair learns a threshold and pools context attended to by both entities |
 
 Status legend: 🔲 planned · 🟡 in progress · ✅ done (matches the reference). Agent modules score by EM/F1 or exact value, not allclose.
 

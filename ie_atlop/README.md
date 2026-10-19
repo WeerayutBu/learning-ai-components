@@ -25,7 +25,14 @@ Dataset examples: [annotated training](data/docred/train_annotated.example.json)
 
 ## Verification
 
-[results.json](results.json) contains the last completed run’s dev F1, Ign F1, and paper comparison. Training refreshes it only after all 30 epochs finish. Test labels are withheld.
+Completed 30 epochs with seed 66; the best checkpoint is epoch 29.
+
+| Dev result | F1 | Ign F1 |
+|---|---:|---:|
+| Local | 60.80 | 58.97 |
+| Paper, five-seed mean | 61.09 | 59.22 |
+
+Full precision and comparison: [results.json](results.json). Test labels are withheld; no test score is reported.
 
 ## Run
 
