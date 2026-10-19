@@ -1,0 +1,19 @@
+{
+  "split": "dev",
+  "seed": 66,
+  "training_completed": true,
+  "evaluations": 30,
+  "best_epoch": 26,
+  "selection": "maximum F1 on known span labels",
+  "measured": {
+    "dev_F1": 57.168498990352255,
+    "dev_precision": 64.90066225165563,
+    "dev_recall": 51.08259823576584,
+    "scope": "known_span_labels",
+    "known_labels": 25811520,
+    "total_labels": 69564096,
+    "unknown_predictions": 11611
+  },
+  "test": "unscored; test annotations are unavailable",
+  "comparison": "not directly comparable to grouped DocRED scores"
+}

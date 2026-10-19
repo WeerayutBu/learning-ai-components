@@ -1,0 +1,618 @@
+{
+  "document_id": "313e6c0c4cb60e1d7588",
+  "text": "Columbia University Libraries is the library system of Columbia University and is one of the top five academic library systems in North America and top ten largest libraries by volumes held .\nWith 11.9 million volumes , over 160,000 journals and serials , as well as extensive electronic resources , manuscripts , rare books , microforms , maps , and graphic and audio - visual materials , it is the fifth largest academic library in the United States and the largest academic library in the State of New York .\nThe services and collections are organized into 21 libraries and various academic technology centers , including affiliates .\nThe organization employs more than 500 professional and support staff and is located on the university 's Morningside Heights campus in New York City .",
+  "spans": [
+    {
+      "id": "e0",
+      "kind": "entity",
+      "label": "ORG",
+      "start": 0,
+      "end": 29,
+      "text": "Columbia University Libraries"
+    },
+    {
+      "id": "e1",
+      "kind": "entity",
+      "label": "ORG",
+      "start": 55,
+      "end": 74,
+      "text": "Columbia University"
+    },
+    {
+      "id": "e2",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 130,
+      "end": 143,
+      "text": "North America"
+    },
+    {
+      "id": "e3",
+      "kind": "entity",
+      "label": "NUM",
+      "start": 197,
+      "end": 209,
+      "text": "11.9 million"
+    },
+    {
+      "id": "e4",
+      "kind": "entity",
+      "label": "NUM",
+      "start": 225,
+      "end": 232,
+      "text": "160,000"
+    },
+    {
+      "id": "e5",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 434,
+      "end": 451,
+      "text": "the United States"
+    },
+    {
+      "id": "e6",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 492,
+      "end": 509,
+      "text": "State of New York"
+    },
+    {
+      "id": "e7",
+      "kind": "entity",
+      "label": "NUM",
+      "start": 560,
+      "end": 562,
+      "text": "21"
+    },
+    {
+      "id": "e8",
+      "kind": "entity",
+      "label": "NUM",
+      "start": 673,
+      "end": 676,
+      "text": "500"
+    },
+    {
+      "id": "e9",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 744,
+      "end": 763,
+      "text": "Morningside Heights"
+    },
+    {
+      "id": "e10",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 774,
+      "end": 787,
+      "text": "New York City"
+    }
+  ],
+  "relations": [
+    {
+      "head": "e0",
+      "tail": "e1",
+      "label": "P361"
+    },
+    {
+      "head": "e0",
+      "tail": "e5",
+      "label": "P17"
+    },
+    {
+      "head": "e1",
+      "tail": "e5",
+      "label": "P17"
+    },
+    {
+      "head": "e1",
+      "tail": "e10",
+      "label": "P159"
+    },
+    {
+      "head": "e2",
+      "tail": "e5",
+      "label": "P527"
+    },
+    {
+      "head": "e5",
+      "tail": "e2",
+      "label": "P30"
+    },
+    {
+      "head": "e5",
+      "tail": "e2",
+      "label": "P361"
+    },
+    {
+      "head": "e5",
+      "tail": "e6",
+      "label": "P150"
+    },
+    {
+      "head": "e5",
+      "tail": "e10",
+      "label": "P36"
+    },
+    {
+      "head": "e6",
+      "tail": "e5",
+      "label": "P131"
+    },
+    {
+      "head": "e6",
+      "tail": "e5",
+      "label": "P17"
+    },
+    {
+      "head": "e6",
+      "tail": "e10",
+      "label": "P150"
+    },
+    {
+      "head": "e9",
+      "tail": "e5",
+      "label": "P17"
+    },
+    {
+      "head": "e10",
+      "tail": "e5",
+      "label": "P1376"
+    },
+    {
+      "head": "e10",
+      "tail": "e5",
+      "label": "P17"
+    },
+    {
+      "head": "e10",
+      "tail": "e6",
+      "label": "P131"
+    }
+  ],
+  "reviewed_pairs": [
+    {
+      "head": "e0",
+      "tail": "e1"
+    },
+    {
+      "head": "e0",
+      "tail": "e2"
+    },
+    {
+      "head": "e0",
+      "tail": "e3"
+    },
+    {
+      "head": "e0",
+      "tail": "e4"
+    },
+    {
+      "head": "e0",
+      "tail": "e5"
+    },
+    {
+      "head": "e0",
+      "tail": "e6"
+    },
+    {
+      "head": "e0",
+      "tail": "e7"
+    },
+    {
+      "head": "e0",
+      "tail": "e8"
+    },
+    {
+      "head": "e0",
+      "tail": "e9"
+    },
+    {
+      "head": "e0",
+      "tail": "e10"
+    },
+    {
+      "head": "e1",
+      "tail": "e0"
+    },
+    {
+      "head": "e1",
+      "tail": "e2"
+    },
+    {
+      "head": "e1",
+      "tail": "e3"
+    },
+    {
+      "head": "e1",
+      "tail": "e4"
+    },
+    {
+      "head": "e1",
+      "tail": "e5"
+    },
+    {
+      "head": "e1",
+      "tail": "e6"
+    },
+    {
+      "head": "e1",
+      "tail": "e7"
+    },
+    {
+      "head": "e1",
+      "tail": "e8"
+    },
+    {
+      "head": "e1",
+      "tail": "e9"
+    },
+    {
+      "head": "e1",
+      "tail": "e10"
+    },
+    {
+      "head": "e2",
+      "tail": "e0"
+    },
+    {
+      "head": "e2",
+      "tail": "e1"
+    },
+    {
+      "head": "e2",
+      "tail": "e3"
+    },
+    {
+      "head": "e2",
+      "tail": "e4"
+    },
+    {
+      "head": "e2",
+      "tail": "e5"
+    },
+    {
+      "head": "e2",
+      "tail": "e6"
+    },
+    {
+      "head": "e2",
+      "tail": "e7"
+    },
+    {
+      "head": "e2",
+      "tail": "e8"
+    },
+    {
+      "head": "e2",
+      "tail": "e9"
+    },
+    {
+      "head": "e2",
+      "tail": "e10"
+    },
+    {
+      "head": "e3",
+      "tail": "e0"
+    },
+    {
+      "head": "e3",
+      "tail": "e1"
+    },
+    {
+      "head": "e3",
+      "tail": "e2"
+    },
+    {
+      "head": "e3",
+      "tail": "e4"
+    },
+    {
+      "head": "e3",
+      "tail": "e5"
+    },
+    {
+      "head": "e3",
+      "tail": "e6"
+    },
+    {
+      "head": "e3",
+      "tail": "e7"
+    },
+    {
+      "head": "e3",
+      "tail": "e8"
+    },
+    {
+      "head": "e3",
+      "tail": "e9"
+    },
+    {
+      "head": "e3",
+      "tail": "e10"
+    },
+    {
+      "head": "e4",
+      "tail": "e0"
+    },
+    {
+      "head": "e4",
+      "tail": "e1"
+    },
+    {
+      "head": "e4",
+      "tail": "e2"
+    },
+    {
+      "head": "e4",
+      "tail": "e3"
+    },
+    {
+      "head": "e4",
+      "tail": "e5"
+    },
+    {
+      "head": "e4",
+      "tail": "e6"
+    },
+    {
+      "head": "e4",
+      "tail": "e7"
+    },
+    {
+      "head": "e4",
+      "tail": "e8"
+    },
+    {
+      "head": "e4",
+      "tail": "e9"
+    },
+    {
+      "head": "e4",
+      "tail": "e10"
+    },
+    {
+      "head": "e5",
+      "tail": "e0"
+    },
+    {
+      "head": "e5",
+      "tail": "e1"
+    },
+    {
+      "head": "e5",
+      "tail": "e2"
+    },
+    {
+      "head": "e5",
+      "tail": "e3"
+    },
+    {
+      "head": "e5",
+      "tail": "e4"
+    },
+    {
+      "head": "e5",
+      "tail": "e6"
+    },
+    {
+      "head": "e5",
+      "tail": "e7"
+    },
+    {
+      "head": "e5",
+      "tail": "e8"
+    },
+    {
+      "head": "e5",
+      "tail": "e9"
+    },
+    {
+      "head": "e5",
+      "tail": "e10"
+    },
+    {
+      "head": "e6",
+      "tail": "e0"
+    },
+    {
+      "head": "e6",
+      "tail": "e1"
+    },
+    {
+      "head": "e6",
+      "tail": "e2"
+    },
+    {
+      "head": "e6",
+      "tail": "e3"
+    },
+    {
+      "head": "e6",
+      "tail": "e4"
+    },
+    {
+      "head": "e6",
+      "tail": "e5"
+    },
+    {
+      "head": "e6",
+      "tail": "e7"
+    },
+    {
+      "head": "e6",
+      "tail": "e8"
+    },
+    {
+      "head": "e6",
+      "tail": "e9"
+    },
+    {
+      "head": "e6",
+      "tail": "e10"
+    },
+    {
+      "head": "e7",
+      "tail": "e0"
+    },
+    {
+      "head": "e7",
+      "tail": "e1"
+    },
+    {
+      "head": "e7",
+      "tail": "e2"
+    },
+    {
+      "head": "e7",
+      "tail": "e3"
+    },
+    {
+      "head": "e7",
+      "tail": "e4"
+    },
+    {
+      "head": "e7",
+      "tail": "e5"
+    },
+    {
+      "head": "e7",
+      "tail": "e6"
+    },
+    {
+      "head": "e7",
+      "tail": "e8"
+    },
+    {
+      "head": "e7",
+      "tail": "e9"
+    },
+    {
+      "head": "e7",
+      "tail": "e10"
+    },
+    {
+      "head": "e8",
+      "tail": "e0"
+    },
+    {
+      "head": "e8",
+      "tail": "e1"
+    },
+    {
+      "head": "e8",
+      "tail": "e2"
+    },
+    {
+      "head": "e8",
+      "tail": "e3"
+    },
+    {
+      "head": "e8",
+      "tail": "e4"
+    },
+    {
+      "head": "e8",
+      "tail": "e5"
+    },
+    {
+      "head": "e8",
+      "tail": "e6"
+    },
+    {
+      "head": "e8",
+      "tail": "e7"
+    },
+    {
+      "head": "e8",
+      "tail": "e9"
+    },
+    {
+      "head": "e8",
+      "tail": "e10"
+    },
+    {
+      "head": "e9",
+      "tail": "e0"
+    },
+    {
+      "head": "e9",
+      "tail": "e1"
+    },
+    {
+      "head": "e9",
+      "tail": "e2"
+    },
+    {
+      "head": "e9",
+      "tail": "e3"
+    },
+    {
+      "head": "e9",
+      "tail": "e4"
+    },
+    {
+      "head": "e9",
+      "tail": "e5"
+    },
+    {
+      "head": "e9",
+      "tail": "e6"
+    },
+    {
+      "head": "e9",
+      "tail": "e7"
+    },
+    {
+      "head": "e9",
+      "tail": "e8"
+    },
+    {
+      "head": "e9",
+      "tail": "e10"
+    },
+    {
+      "head": "e10",
+      "tail": "e0"
+    },
+    {
+      "head": "e10",
+      "tail": "e1"
+    },
+    {
+      "head": "e10",
+      "tail": "e2"
+    },
+    {
+      "head": "e10",
+      "tail": "e3"
+    },
+    {
+      "head": "e10",
+      "tail": "e4"
+    },
+    {
+      "head": "e10",
+      "tail": "e5"
+    },
+    {
+      "head": "e10",
+      "tail": "e6"
+    },
+    {
+      "head": "e10",
+      "tail": "e7"
+    },
+    {
+      "head": "e10",
+      "tail": "e8"
+    },
+    {
+      "head": "e10",
+      "tail": "e9"
+    }
+  ]
+}

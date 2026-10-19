@@ -1,0 +1,553 @@
+{
+  "document_id": "0f38978a5c2f22e8f290",
+  "text": "The short - beaked common dolphin ( Delphinus delphis ) is a species of common dolphin .\nIt has a larger range than the long - beaked common dolphin ( D. capensis ) , occurring throughout warm - temperate and tropical oceans , including the Indian Ocean although in smaller quantities than other places they are found .\nThere are more short - beaked common dolphins than any other dolphin species in the warm - temperate portions of the Atlantic and Pacific Oceans .\nIt is also found in the Caribbean and Mediterranean Seas .\nThe short - beaked common dolphin is also abundant in the Black Sea , Gulf of Mexico , and Red Sea .\nThey follow the gulf stream up to Norwegian waters .\nSeldom do any short - beaked dolphin venture near the Arctic .",
+  "spans": [
+    {
+      "id": "e0",
+      "kind": "entity",
+      "label": "MISC",
+      "start": 36,
+      "end": 53,
+      "text": "Delphinus delphis"
+    },
+    {
+      "id": "e1",
+      "kind": "entity",
+      "label": "MISC",
+      "start": 4,
+      "end": 33,
+      "text": "short - beaked common dolphin"
+    },
+    {
+      "id": "e2",
+      "kind": "entity",
+      "label": "MISC",
+      "start": 151,
+      "end": 162,
+      "text": "D. capensis"
+    },
+    {
+      "id": "e3",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 241,
+      "end": 253,
+      "text": "Indian Ocean"
+    },
+    {
+      "id": "e4",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 437,
+      "end": 445,
+      "text": "Atlantic"
+    },
+    {
+      "id": "e5",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 450,
+      "end": 464,
+      "text": "Pacific Oceans"
+    },
+    {
+      "id": "e6",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 491,
+      "end": 500,
+      "text": "Caribbean"
+    },
+    {
+      "id": "e7",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 505,
+      "end": 523,
+      "text": "Mediterranean Seas"
+    },
+    {
+      "id": "e8",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 584,
+      "end": 593,
+      "text": "Black Sea"
+    },
+    {
+      "id": "e9",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 596,
+      "end": 610,
+      "text": "Gulf of Mexico"
+    },
+    {
+      "id": "e10",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 617,
+      "end": 624,
+      "text": "Red Sea"
+    },
+    {
+      "id": "e11",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 661,
+      "end": 670,
+      "text": "Norwegian"
+    },
+    {
+      "id": "e12",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 734,
+      "end": 740,
+      "text": "Arctic"
+    }
+  ],
+  "relations": [],
+  "reviewed_pairs": [
+    {
+      "head": "e2",
+      "tail": "e3"
+    },
+    {
+      "head": "e2",
+      "tail": "e4"
+    },
+    {
+      "head": "e2",
+      "tail": "e5"
+    },
+    {
+      "head": "e2",
+      "tail": "e6"
+    },
+    {
+      "head": "e2",
+      "tail": "e7"
+    },
+    {
+      "head": "e2",
+      "tail": "e8"
+    },
+    {
+      "head": "e2",
+      "tail": "e9"
+    },
+    {
+      "head": "e2",
+      "tail": "e10"
+    },
+    {
+      "head": "e2",
+      "tail": "e11"
+    },
+    {
+      "head": "e2",
+      "tail": "e12"
+    },
+    {
+      "head": "e3",
+      "tail": "e2"
+    },
+    {
+      "head": "e3",
+      "tail": "e4"
+    },
+    {
+      "head": "e3",
+      "tail": "e5"
+    },
+    {
+      "head": "e3",
+      "tail": "e6"
+    },
+    {
+      "head": "e3",
+      "tail": "e7"
+    },
+    {
+      "head": "e3",
+      "tail": "e8"
+    },
+    {
+      "head": "e3",
+      "tail": "e9"
+    },
+    {
+      "head": "e3",
+      "tail": "e10"
+    },
+    {
+      "head": "e3",
+      "tail": "e11"
+    },
+    {
+      "head": "e3",
+      "tail": "e12"
+    },
+    {
+      "head": "e4",
+      "tail": "e2"
+    },
+    {
+      "head": "e4",
+      "tail": "e3"
+    },
+    {
+      "head": "e4",
+      "tail": "e5"
+    },
+    {
+      "head": "e4",
+      "tail": "e6"
+    },
+    {
+      "head": "e4",
+      "tail": "e7"
+    },
+    {
+      "head": "e4",
+      "tail": "e8"
+    },
+    {
+      "head": "e4",
+      "tail": "e9"
+    },
+    {
+      "head": "e4",
+      "tail": "e10"
+    },
+    {
+      "head": "e4",
+      "tail": "e11"
+    },
+    {
+      "head": "e4",
+      "tail": "e12"
+    },
+    {
+      "head": "e5",
+      "tail": "e2"
+    },
+    {
+      "head": "e5",
+      "tail": "e3"
+    },
+    {
+      "head": "e5",
+      "tail": "e4"
+    },
+    {
+      "head": "e5",
+      "tail": "e6"
+    },
+    {
+      "head": "e5",
+      "tail": "e7"
+    },
+    {
+      "head": "e5",
+      "tail": "e8"
+    },
+    {
+      "head": "e5",
+      "tail": "e9"
+    },
+    {
+      "head": "e5",
+      "tail": "e10"
+    },
+    {
+      "head": "e5",
+      "tail": "e11"
+    },
+    {
+      "head": "e5",
+      "tail": "e12"
+    },
+    {
+      "head": "e6",
+      "tail": "e2"
+    },
+    {
+      "head": "e6",
+      "tail": "e3"
+    },
+    {
+      "head": "e6",
+      "tail": "e4"
+    },
+    {
+      "head": "e6",
+      "tail": "e5"
+    },
+    {
+      "head": "e6",
+      "tail": "e7"
+    },
+    {
+      "head": "e6",
+      "tail": "e8"
+    },
+    {
+      "head": "e6",
+      "tail": "e9"
+    },
+    {
+      "head": "e6",
+      "tail": "e10"
+    },
+    {
+      "head": "e6",
+      "tail": "e11"
+    },
+    {
+      "head": "e6",
+      "tail": "e12"
+    },
+    {
+      "head": "e7",
+      "tail": "e2"
+    },
+    {
+      "head": "e7",
+      "tail": "e3"
+    },
+    {
+      "head": "e7",
+      "tail": "e4"
+    },
+    {
+      "head": "e7",
+      "tail": "e5"
+    },
+    {
+      "head": "e7",
+      "tail": "e6"
+    },
+    {
+      "head": "e7",
+      "tail": "e8"
+    },
+    {
+      "head": "e7",
+      "tail": "e9"
+    },
+    {
+      "head": "e7",
+      "tail": "e10"
+    },
+    {
+      "head": "e7",
+      "tail": "e11"
+    },
+    {
+      "head": "e7",
+      "tail": "e12"
+    },
+    {
+      "head": "e8",
+      "tail": "e2"
+    },
+    {
+      "head": "e8",
+      "tail": "e3"
+    },
+    {
+      "head": "e8",
+      "tail": "e4"
+    },
+    {
+      "head": "e8",
+      "tail": "e5"
+    },
+    {
+      "head": "e8",
+      "tail": "e6"
+    },
+    {
+      "head": "e8",
+      "tail": "e7"
+    },
+    {
+      "head": "e8",
+      "tail": "e9"
+    },
+    {
+      "head": "e8",
+      "tail": "e10"
+    },
+    {
+      "head": "e8",
+      "tail": "e11"
+    },
+    {
+      "head": "e8",
+      "tail": "e12"
+    },
+    {
+      "head": "e9",
+      "tail": "e2"
+    },
+    {
+      "head": "e9",
+      "tail": "e3"
+    },
+    {
+      "head": "e9",
+      "tail": "e4"
+    },
+    {
+      "head": "e9",
+      "tail": "e5"
+    },
+    {
+      "head": "e9",
+      "tail": "e6"
+    },
+    {
+      "head": "e9",
+      "tail": "e7"
+    },
+    {
+      "head": "e9",
+      "tail": "e8"
+    },
+    {
+      "head": "e9",
+      "tail": "e10"
+    },
+    {
+      "head": "e9",
+      "tail": "e11"
+    },
+    {
+      "head": "e9",
+      "tail": "e12"
+    },
+    {
+      "head": "e10",
+      "tail": "e2"
+    },
+    {
+      "head": "e10",
+      "tail": "e3"
+    },
+    {
+      "head": "e10",
+      "tail": "e4"
+    },
+    {
+      "head": "e10",
+      "tail": "e5"
+    },
+    {
+      "head": "e10",
+      "tail": "e6"
+    },
+    {
+      "head": "e10",
+      "tail": "e7"
+    },
+    {
+      "head": "e10",
+      "tail": "e8"
+    },
+    {
+      "head": "e10",
+      "tail": "e9"
+    },
+    {
+      "head": "e10",
+      "tail": "e11"
+    },
+    {
+      "head": "e10",
+      "tail": "e12"
+    },
+    {
+      "head": "e11",
+      "tail": "e2"
+    },
+    {
+      "head": "e11",
+      "tail": "e3"
+    },
+    {
+      "head": "e11",
+      "tail": "e4"
+    },
+    {
+      "head": "e11",
+      "tail": "e5"
+    },
+    {
+      "head": "e11",
+      "tail": "e6"
+    },
+    {
+      "head": "e11",
+      "tail": "e7"
+    },
+    {
+      "head": "e11",
+      "tail": "e8"
+    },
+    {
+      "head": "e11",
+      "tail": "e9"
+    },
+    {
+      "head": "e11",
+      "tail": "e10"
+    },
+    {
+      "head": "e11",
+      "tail": "e12"
+    },
+    {
+      "head": "e12",
+      "tail": "e2"
+    },
+    {
+      "head": "e12",
+      "tail": "e3"
+    },
+    {
+      "head": "e12",
+      "tail": "e4"
+    },
+    {
+      "head": "e12",
+      "tail": "e5"
+    },
+    {
+      "head": "e12",
+      "tail": "e6"
+    },
+    {
+      "head": "e12",
+      "tail": "e7"
+    },
+    {
+      "head": "e12",
+      "tail": "e8"
+    },
+    {
+      "head": "e12",
+      "tail": "e9"
+    },
+    {
+      "head": "e12",
+      "tail": "e10"
+    },
+    {
+      "head": "e12",
+      "tail": "e11"
+    }
+  ]
+}

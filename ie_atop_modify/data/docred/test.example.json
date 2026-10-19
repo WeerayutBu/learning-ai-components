@@ -1,0 +1,144 @@
+{
+  "document_id": "b78d82e8d54fc1d54b45",
+  "text": "The Canton Memorial Civic Center is a multi - purpose arena located in Canton , Ohio , United States , and is currently the home arena for the Canton Charge of the NBA G League .\nBuilt in 1951 , previous sports teams that have played at the center include the Canton Legends indoor football team , Canton Invaders indoor soccer team , and Ohio Aviators of the American Basketball Association .\nThe building is owned by the City of Canton and operated by SMG .\nCapacity is 5,200 in the arena , and up to 600 in the McKinley Room .\nThe facility has over the years hosted concerts , professional wrestling cards , political rallies , family shows , and features a number of annual Pro Football Hall of Fame festival events .",
+  "spans": [
+    {
+      "id": "e0",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 4,
+      "end": 32,
+      "text": "Canton Memorial Civic Center"
+    },
+    {
+      "id": "e1",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 423,
+      "end": 437,
+      "text": "City of Canton"
+    },
+    {
+      "id": "e2",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 71,
+      "end": 77,
+      "text": "Canton"
+    },
+    {
+      "id": "e3",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 80,
+      "end": 84,
+      "text": "Ohio"
+    },
+    {
+      "id": "e4",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 87,
+      "end": 100,
+      "text": "United States"
+    },
+    {
+      "id": "e5",
+      "kind": "entity",
+      "label": "ORG",
+      "start": 143,
+      "end": 156,
+      "text": "Canton Charge"
+    },
+    {
+      "id": "e6",
+      "kind": "entity",
+      "label": "ORG",
+      "start": 164,
+      "end": 176,
+      "text": "NBA G League"
+    },
+    {
+      "id": "e7",
+      "kind": "entity",
+      "label": "TIME",
+      "start": 188,
+      "end": 192,
+      "text": "1951"
+    },
+    {
+      "id": "e8",
+      "kind": "entity",
+      "label": "ORG",
+      "start": 260,
+      "end": 274,
+      "text": "Canton Legends"
+    },
+    {
+      "id": "e9",
+      "kind": "entity",
+      "label": "ORG",
+      "start": 298,
+      "end": 313,
+      "text": "Canton Invaders"
+    },
+    {
+      "id": "e10",
+      "kind": "entity",
+      "label": "ORG",
+      "start": 339,
+      "end": 352,
+      "text": "Ohio Aviators"
+    },
+    {
+      "id": "e11",
+      "kind": "entity",
+      "label": "ORG",
+      "start": 360,
+      "end": 391,
+      "text": "American Basketball Association"
+    },
+    {
+      "id": "e12",
+      "kind": "entity",
+      "label": "ORG",
+      "start": 454,
+      "end": 457,
+      "text": "SMG"
+    },
+    {
+      "id": "e13",
+      "kind": "entity",
+      "label": "NUM",
+      "start": 472,
+      "end": 477,
+      "text": "5,200"
+    },
+    {
+      "id": "e14",
+      "kind": "entity",
+      "label": "NUM",
+      "start": 503,
+      "end": 506,
+      "text": "600"
+    },
+    {
+      "id": "e15",
+      "kind": "entity",
+      "label": "LOC",
+      "start": 514,
+      "end": 527,
+      "text": "McKinley Room"
+    },
+    {
+      "id": "e16",
+      "kind": "entity",
+      "label": "MISC",
+      "start": 678,
+      "end": 703,
+      "text": "Pro Football Hall of Fame"
+    }
+  ],
+  "relations": [],
+  "reviewed_pairs": []
+}

@@ -1,0 +1,8 @@
+data/docred/*
+!data/docred/*.example.json
+artifacts/*
+!artifacts/.gitkeep
+checkpoints/
+mentions/
+data/mentions-reviewed/
+data/raw/
