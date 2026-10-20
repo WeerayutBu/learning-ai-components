@@ -58,7 +58,7 @@ class Router:
         self.base_url = os.getenv('OPENROUTER_BASE_URL', 'https://openrouter.ai/api/v1').rstrip('/')
         self.http = httpx.Client(base_url=self.base_url + '/', timeout=120,
                                  headers={'Authorization': f'Bearer {key}',
-                                          'X-OpenRouter-Title': 'learning-llm-components DiZiNER'})
+                                          'X-OpenRouter-Title': 'learning-ai-components DiZiNER'})
         self.output = Path(output)
         self.output.mkdir(parents=True, exist_ok=True)
         self.max_requests, self.max_cost_usd = max_requests, max_cost_usd
